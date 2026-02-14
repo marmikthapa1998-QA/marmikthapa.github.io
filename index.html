@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmik Thapa | Senior QA Test Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0b0e14;
+            --card-bg: #161b22;
+            --accent-color: #00d4ff; /* PlayStation Blue */
+            --text-main: #e6edf3;
+            --text-dim: #8b949e;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-main);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            background: rgba(11, 14, 20, 0.95);
+            padding: 1rem;
+            z-index: 1000;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a { color: var(--text-main); text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: 0.3s; }
+        nav a:hover { color: var(--accent-color); }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(11, 14, 20, 0.8), rgba(11, 14, 20, 0.8)), 
+                        url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=2070') center/cover;
+            padding: 20px;
+        }
+        header h1 { font-size: 3.5rem; margin-bottom: 10px; color: var(--accent-color); }
+        header p { font-size: 1.2rem; max-width: 700px; color: var(--text-dim); }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 80px 20px; }
+
+        h2 { border-left: 4px solid var(--accent-color); padding-left: 15px; margin-bottom: 30px; font-size: 2rem; }
+
+        /* Experience Cards */
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid #30363d;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent-color); }
+        .date { color: var(--accent-color); font-weight: bold; font-size: 0.9rem; }
+
+        /* Projects Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #30363d;
+        }
+        .project-img {
+            width: 100%; height: 180px;
+            background: #21262d;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 3rem; color: #30363d;
+        }
+        .project-info { padding: 15px; }
+        .tag { 
+            display: inline-block; 
+            background: rgba(0, 212, 255, 0.1); 
+            color: var(--accent-color); 
+            padding: 2px 10px; 
+            border-radius: 20px; 
+            font-size: 0.8rem; 
+            margin-bottom: 10px;
+        }
+
+        /* Skills Layout */
+        .skills-section { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-badge {
+            background: #21262d;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            border: 1px solid #30363d;
+        }
+
+        footer { text-align: center; padding: 40px; background: var(--card-bg); color: var(--text-dim); }
+        .social-links a { color: var(--text-main); font-size: 1.5rem; margin: 0 10px; transition: 0.3s; }
+        .social-links a:hover { color: var(--accent-color); }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            nav { font-size: 0.7rem; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <header>
+        <h1>MARMIK THAPA</h1>
+        <p>Senior QA Test Engineer | Sony Compliance Specialist | Mobile & Console Testing</p>
+        <p style="margin-top: 15px; font-style: italic;">"Breaking builds to build better games."</p>
+    </header>
+
+    <div class="container" id="about">
+        <h2>🧠 About Me</h2>
+        <p>Detail-oriented QA Test Engineer with 4+ years of experience in manual testing across PC, console, and mobile platforms. Proficient in smoke, regression, ad-hoc, and compliance testing. Skilled in using JIRA, TestRail, Unity, and Sony internal tools to ensure timely, high-quality releases.</p>
+    </div>
+
+    <div class="container" id="experience">
+        <h2>💼 Work Experience</h2>
+        
+        <div class="card">
+            <span class="date">June 2021 — Present</span>
+            <h3>Senior QA Tester | GlobalStep</h3>
+            <ul>
+                <li><strong>Sony Compliance:</strong> Conducted procurement compliance tests for 250+ applications on PS4/PS5 with 95% bug accuracy.</li>
+                <li><strong>Process Improvement:</strong> Developed standardized bug templates reducing documentation friction.</li>
+                <li><strong>Leadership:</strong> Led a team of 12 for performance playtesting and game stability analysis.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Key Role: Scopely (The Walking Dead)</h3>
+            <p>Optimized test planning by prioritizing test cases, reducing overall testing time by 15%-20%. Managed strategies across Alpha, Beta, and Production stages.</p>
+        </div>
+
+        <div class="card">
+            <h3>Key Role: Netflix Games</h3>
+            <p>Created and executed 150+ manual test cases for Android/iOS titles, ensuring 100% coverage for smoke and functional testing phases.</p>
+        </div>
+    </div>
+
+    <div class="container" id="projects">
+        <h2>🚀 Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-img"><i class="fab fa-playstation"></i></div>
+                <div class="project-info">
+                    <span class="tag">Console</span>
+                    <h3>Sony Compliance</h3>
+                    <p>Testing against Sony Technical Requirements (TR) for global PlayStation Store submission.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><i class="fas fa-mobile-alt"></i></div>
+                <div class="project-info">
+                    <span class="tag">Mobile</span>
+                    <h3>The Walking Dead</h3>
+                    <p>Live-ops testing and feature prioritization for Scopely's hit mobile title.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><i class="fas fa-vr-cardboard"></i></div>
+                <div class="project-info">
+                    <span class="tag">Next-Gen</span>
+                    <h3>VR & VR2 Testing</h3>
+                    <p>Specialized testing for immersive hardware and anomalous behavior detection.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="skills">
+        <h2>🛠️ Technical Skills</h2>
+        <div class="skills-section">
+            <div class="skill-badge">Manual Testing</div>
+            <div class="skill-badge">Regression Testing</div>
+            <div class="skill-badge">Compliance Testing (Sony TR)</div>
+            <div class="skill-badge">JIRA</div>
+            <div class="skill-badge">TestRail</div>
+            <div class="skill-badge">Unity</div>
+            <div class="skill-badge">SDLC/STLC</div>
+            <div class="skill-badge">PS5 Manager</div>
+            <div class="skill-badge">PresentMon</div>
+            <div class="skill-badge">Agile Methodology</div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <h2>Connect With Me</h2>
+        <p>Pune, Maharashtra, India</p>
+        <p>+91 8329238726 | marmikthapa98@gmail.com</p>
+        <div class="social-links" style="margin-top: 20px;">
+            <a href="https://linkedin.com/in/marmik-thapa-2b2457188" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:marmikthapa98@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p style="margin-top: 40px; font-size: 0.8rem;">© 2026 Marmik Thapa. Built for the Gaming Industry.</p>
+    </footer>
+
+</body>
+</html>
